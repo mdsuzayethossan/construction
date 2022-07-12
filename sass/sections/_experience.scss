@@ -1,0 +1,58 @@
+#experience {
+    padding-top: 150px;
+    .container {
+        .experience-header-item-left {
+            p {
+                @include p;
+
+            }
+            a {
+                @include btn;
+            }
+        }
+        .experience-header-item-right {
+            h2 {
+                @include h3;
+            }
+
+        }
+        .experience-banner {
+            img {
+               
+            }
+        }
+        .experience-item {
+            margin-bottom: 150px;
+            .experience-left {
+                margin-right: 63px;
+                .experience-shape {
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 5px 38px 5px 38px;
+                    position: relative;
+                    .experience-list {
+                        position: absolute;
+                        right: -25px;
+                        top: -35px;
+                        h3 {
+                            font-weight: 600;
+                            font-size: 72px;
+                           
+                        }
+
+                    }
+                   
+
+                }
+
+            }
+            .experience-right {
+                p {
+                    @include p;
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,97 @@
+#engineers {
+    padding-top: 150px;
+    .container {
+        h2 {
+            @include h2;
+        }
+        p {
+            @include p;
+            padding-bottom: 80px;
+
+        }
+        .engineers-lists {
+            margin: 15px;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            .engineer-top {
+                position: relative;
+                padding-bottom: 50px;
+                .engineer-star {
+                    position: absolute;
+                    left: 0;
+                    i {
+                        font-size: 24px;
+                        color: #F0BB00;
+                     }
+                }
+                .engineer-link {
+                    position: absolute;
+                    right: 0;
+                    a {
+                        font-size: 24px;
+                        color: $sub-color;
+                     }
+                }
+            }  
+            .engineers-img {
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 120px;
+                    height: 120px;
+
+                    
+                }
+
+            }
+           
+            
+                        
+            h4 {
+
+            }
+            span {
+                color: $text-color;
+
+            }
+            h5 {
+                padding-top: 47px;
+
+            }
+            a {
+                text-decoration: none;
+                color: $main-color;
+
+            }
+        }
+        .engineer-slider {
+            padding-top: 80px;
+            .fa-arrow-left-long {
+                width: 50px;
+                height: 50px;
+                background-color: $main-color;
+                line-height: 50px;
+                border-radius: 50%;
+                margin: 0 5px; 
+                color: $white;  
+                cursor: pointer;
+
+            }
+            .fa-arrow-right-long {
+                width: 50px;
+                height: 50px;
+                background-color: $main-color;
+                line-height: 50px;
+                border-radius: 50%;
+                margin: 0 5px;
+                color: $white;
+                cursor: pointer;
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,55 @@
+#ceo {
+    padding-top: 140px;
+    .ceo {
+        .container {
+            .ceo-container {
+                width: 85%;
+                margin: 0 auto;
+                .ceo-quotes-start {
+                    font-size: 200px;
+                    color: $white;
+                    line-height: 0;
+                    padding: 0 45px;
+                }
+                h3 {
+                    font-family: Poppins;
+                    font-size: 54px;
+                    font-weight: 500;
+                    line-height: 76px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #FAFAFA;
+                    text-align: center;
+                    padding-top: 176px;
+                    padding-bottom: 30px;
+    
+                }
+                .ceo-first-p {
+                    margin-bottom: 70px;
+                    color: $white;
+                    padding: 0 11%;
+                    
+                }
+                .ceo-second-p {
+                    color: $white;
+                    padding: 0 11%;
+                    
+    
+                }
+                .ceo-quotes-end {
+                    font-size: 200px;
+                    color: $white;
+                    line-height: 0;
+                    text-align: right;
+                    display: block;
+                    padding-bottom: 237px;
+                    margin-top: 5%;
+                    
+                }
+                
+            }
+        
+        }
+        
+    }
+}

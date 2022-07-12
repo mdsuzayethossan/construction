@@ -1,0 +1,70 @@
+#banner {
+  .container {
+    .banner-left {
+      padding-top: 170px;
+      h1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 77px;
+        letter-spacing: -0.04em;
+        text-align: left;
+        .master {
+          color: $main-color;
+          
+        }
+        .quality {
+          color: $main-color;
+        }
+      }
+      p {
+        @include p;
+      }
+        .banner-left-btn {
+          @include btn;
+        }
+        .banner-right-btn {
+          @include btn;
+        }
+        .counter-part {
+          margin-top: 150px;
+          .counter-item {
+            h3 {
+              font-weight: 500;
+              font-size: 40px;
+
+            }
+            p {
+              font-size: 20px;
+              font-weight: 400;
+              color: $text-color;
+
+            }
+          }
+           }
+        
+        }
+
+    .banner-right {
+      img {
+
+      }
+    }
+  }
+  .company {
+    margin-top: 150px;
+    padding: 40px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    .company-item {
+      @include for-phone-only {
+        margin: 5px 0;
+    }
+      
+    }
+}
+}
+

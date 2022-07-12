@@ -1,0 +1,81 @@
+#footer {
+    padding-top: 150px;
+    .container {
+        .footer-item {
+            a {
+               font-size: 25px;
+               text-decoration: none;
+               margin-bottom: 10px;
+               display: inline-block;
+            }
+            p {
+                margin-bottom: 20px;
+
+            }
+            .footer-social {
+                ul {
+                    list-style-type: none;
+                    display: inline;
+                    margin: 0;
+                    padding: 0;
+                    
+                    li {
+                        display: inline;
+                        margin: 0 3px;
+                        i {
+                            font-size: 34px;
+                            color: $main-color;
+                            // color: $white;
+
+                        }
+
+                    }
+                }
+            }
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 27px;
+                margin-bottom: 25px;
+                color: $sub-color;
+            }
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #6B6B6B;
+
+                    }
+                }
+            }
+            form {
+                input {
+                    border: none;
+                    outline: none;
+
+                }
+                button {
+                    border: none;
+                    background-color: transparent;
+                    i {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+        }
+        .footer-last {
+            margin-top: 100px;
+            margin-bottom: 40px;
+            p {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            color: #C2C2C2;
+
+            }
+        }
+    }
+}

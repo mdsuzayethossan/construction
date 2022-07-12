@@ -1,0 +1,55 @@
+#blog {
+    padding-top: 150px;
+    .container {
+        .blog-header {
+            h2 {
+                @include h2;
+
+            }
+            p {
+                @include p;
+            }
+
+        }
+        .blog-main {
+            .blog-item {
+                @include border-radius-25;
+                @include for-phone-only {
+                    margin: 10px 0;
+                }
+                &:hover {
+                    .blog-item-overlay {
+                        top: 50%;
+                        visibility: visible;
+                    }
+                }
+                
+                img {
+                    width: 100%;
+                }
+                .blog-item-overlay {
+                    width: 380px;
+                    @include transition;
+                    top: 65%;
+                    visibility: hidden;
+       
+                    h3 {
+                        font-size: 27px;
+                        font-weight: 700;
+                        color: $white;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $white;
+                    }
+                    a {
+                        text-decoration: none;
+                        @include btn;
+
+                    }
+                }
+            }
+        }
+    }
+}

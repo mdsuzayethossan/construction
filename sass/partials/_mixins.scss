@@ -1,0 +1,40 @@
+@mixin btn{
+    width: 214px;
+    background-color: $main-color;
+    border-radius: 40px 5px 40px 5px;
+    color: $white;
+    line-height: 30px;
+    outline: 0;
+    
+}
+@mixin h3 {
+    font-size: 54px;
+    font-weight: 500;  
+    
+}
+@mixin h2 {
+    font-size: 54px;
+    font-weight: 600;      
+}
+@mixin  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $text-color;
+    
+}
+@mixin transition {
+    transition-duration: 2s;
+    transition:  all linear .8s;
+    -webkit-transition:  all linear .8s;
+    -moz-transition:  all linear .8s;
+    -ms-transition:  all linear .8s;
+    -o-transition:  all linear .8s;
+}
+@mixin  border-radius-25 {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
