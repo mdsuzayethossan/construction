@@ -3,6 +3,7 @@
     .container {
         h2 {
             @include h2;
+            margin-bottom: 25px;
         }
         p {
             @include p;

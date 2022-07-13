@@ -5,6 +5,9 @@
     color: $white;
     line-height: 30px;
     outline: 0;
+    @include for-phone-only {
+        width: 150px;
+    }
     
 }
 @mixin h3 {

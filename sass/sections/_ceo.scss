@@ -10,6 +10,9 @@
                     color: $white;
                     line-height: 0;
                     padding: 0 45px;
+                    @include for-phone-only {
+                        font-size: 100px;
+                    }
                 }
                 h3 {
                     font-family: Poppins;
@@ -44,6 +47,9 @@
                     display: block;
                     padding-bottom: 237px;
                     margin-top: 5%;
+                    @include for-phone-only {
+                        font-size: 100px;
+                    }
                     
                 }
                 

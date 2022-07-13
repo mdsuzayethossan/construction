@@ -11,12 +11,18 @@
             }
         }
         .experience-header-item-right {
+            @include for-phone-only {
+                margin-top: 35px;
+            }
             h2 {
                 @include h3;
             }
 
         }
         .experience-banner {
+            @include for-phone-only {
+                margin-bottom: 150px;
+            }
             img {
                
             }
