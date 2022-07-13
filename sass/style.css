@@ -526,6 +526,11 @@ ul {
 #footer {
   padding-top: 150px;
 }
+@media (max-width: 599px) {
+  #footer .container .footer-item {
+    margin: 10px 0;
+  }
+}
 #footer .container .footer-item a {
   font-size: 25px;
   text-decoration: none;
