@@ -66,4 +66,22 @@ $('.engineer-main').slick({
     // instead of a settings object
 ]
   });
+
+  //back to top
+  var btn = $('.back-to-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: "0" },  5000);
+});
+
+
 });

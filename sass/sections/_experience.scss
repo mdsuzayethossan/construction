@@ -23,6 +23,12 @@
             @include for-phone-only {
                 margin-bottom: 150px;
             }
+            @include for-tablet-portrait-up {
+                margin-bottom: 150px;
+            }
+            @include for-tablet-landscape-up {
+                margin-bottom: 150px;
+            }
             img {
                
             }

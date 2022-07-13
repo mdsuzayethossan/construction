@@ -1,6 +1,17 @@
 #footer {
     padding-top: 150px;
     .container {
+        .back-to-top {
+            a {
+                i {
+                    cursor: pointer;
+                    &:hover {
+                        transition: all .4s linear;
+	                    transform: scale(1.1);
+                    }
+                }
+            }
+        }
         .footer-item {
             @include for-phone-only {
                 margin: 10px 0;

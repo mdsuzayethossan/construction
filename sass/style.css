@@ -123,6 +123,11 @@ ul {
   letter-spacing: -0.04em;
   text-align: left;
 }
+@media (max-width: 599px) {
+  #banner .container .banner-left h1 {
+    font-size: 45px;
+  }
+}
 #banner .container .banner-left h1 .master {
   color: #18A7B9;
 }
@@ -221,6 +226,16 @@ ul {
   font-weight: 500;
 }
 @media (max-width: 599px) {
+  #experience .container .experience-banner {
+    margin-bottom: 150px;
+  }
+}
+@media (min-width: 600px) {
+  #experience .container .experience-banner {
+    margin-bottom: 150px;
+  }
+}
+@media (min-width: 900px) {
   #experience .container .experience-banner {
     margin-bottom: 150px;
   }
@@ -354,6 +369,21 @@ ul {
     font-size: 100px;
   }
 }
+@media (min-width: 600px) {
+  #ceo .ceo .container .ceo-container .ceo-quotes-start {
+    font-size: 150px;
+  }
+}
+@media (min-width: 900px) {
+  #ceo .ceo .container .ceo-container .ceo-quotes-start {
+    font-size: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #ceo .ceo .container .ceo-container .ceo-quotes-start {
+    font-size: 150px;
+  }
+}
 #ceo .ceo .container .ceo-container h3 {
   font-family: Poppins;
   font-size: 54px;
@@ -387,6 +417,21 @@ ul {
 @media (max-width: 599px) {
   #ceo .ceo .container .ceo-container .ceo-quotes-end {
     font-size: 100px;
+  }
+}
+@media (min-width: 600px) {
+  #ceo .ceo .container .ceo-container .ceo-quotes-end {
+    font-size: 150px;
+  }
+}
+@media (min-width: 900px) {
+  #ceo .ceo .container .ceo-container .ceo-quotes-end {
+    font-size: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #ceo .ceo .container .ceo-container .ceo-quotes-end {
+    font-size: 150px;
   }
 }
 
@@ -525,6 +570,13 @@ ul {
 
 #footer {
   padding-top: 150px;
+}
+#footer .container .back-to-top a i {
+  cursor: pointer;
+}
+#footer .container .back-to-top a i:hover {
+  transition: all 0.4s linear;
+  transform: scale(1.1);
 }
 @media (max-width: 599px) {
   #footer .container .footer-item {
