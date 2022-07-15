@@ -4,6 +4,7 @@
         .experience-header-item-left {
             p {
                 @include p;
+                padding-bottom: 25px;
 
             }
             a {
@@ -26,9 +27,9 @@
             @include for-tablet-portrait-up {
                 margin-bottom: 150px;
             }
-            @include for-tablet-landscape-up {
-                margin-bottom: 150px;
-            }
+            // @include for-tablet-landscape-up {
+            //     margin-bottom: 150px;
+            // }
             img {
                
             }

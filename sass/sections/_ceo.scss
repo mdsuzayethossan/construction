@@ -34,6 +34,14 @@
                     text-align: center;
                     padding-top: 176px;
                     padding-bottom: 30px;
+                    @include for-phone-only {
+                        margin-bottom: 25px;
+                        font-size: 35px;
+                    }
+                    @include for-tablet-portrait-up {
+                        margin-bottom: 25px;
+                        font-size: 35px;
+                    }
     
                 }
                 .ceo-first-p {

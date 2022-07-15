@@ -13,19 +13,39 @@
             }
         }
         .contact-form {
-            .form-control {
-                border: none;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-                padding: 12px 8px;
-
-            }
-            button {
-                border: none;
-                @include btn;
-             
-
-            }
-            
+                margin-bottom: 40px;
+                form {
+                    .mb-3 {
+                        fieldset {
+                            width: 100%;
+                            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px;
+                            @include border-radius-5;
+                            border: 1px solid #d7d7d7;
+                            legend {
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: $text-color;
+                            }
+                            .form-control {
+                                border: none;
+                                &:focus {
+                                
+                                    box-shadow: none; 
+                                }
+                                
+                
+                            }
+                         
+                        }
+                    }
+                    button {
+                        border: none;
+                        @include btn;
+                        margin-top: 10px;
+                     
+        
+                    }
+                }    
         }
     }
 }

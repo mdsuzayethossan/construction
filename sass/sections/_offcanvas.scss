@@ -12,6 +12,7 @@
         visibility: hidden;
         background-color: $white;
         transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+        z-index: 99999;
     }
     .offcanvas-collapse.open {
         visibility: visible;

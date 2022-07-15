@@ -1,10 +1,17 @@
 @mixin btn{
     width: 214px;
-    background-color: $main-color;
+    border: 1px solid $main-color;
     border-radius: 40px 5px 40px 5px;
     color: $white;
-    line-height: 30px;
+    line-height: 40px;
     outline: 0;
+    color: $main-color;
+    &:hover {
+        background-color: $main-color;
+        color: $white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+    }
     @include for-phone-only {
         width: 150px;
     }
@@ -40,4 +47,11 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+}
+@mixin  border-radius-5 {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }

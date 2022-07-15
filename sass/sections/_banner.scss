@@ -21,25 +21,35 @@
       }
       p {
         @include p;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
         .banner-left-btn {
           @include btn;
         }
         .banner-right-btn {
           @include btn;
+          margin-left: 15px;
         }
         .counter-part {
           margin-top: 150px;
+          @include for-phone-only {
+            margin-top: 80px;
+          }
           .counter-item {
             h3 {
               font-weight: 500;
               font-size: 40px;
+              @include for-phone-only {
+                font-size: 35px;
+              }
 
             }
             p {
               font-size: 20px;
               font-weight: 400;
               color: $text-color;
+           
 
             }
           }
@@ -55,21 +65,6 @@
       }
     }
   }
-  .company {
-    margin-top: 75px;
-    padding: 40px 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    -ms-border-radius: 150px;
-    -o-border-radius: 150px;
-    .company-item {
-      @include for-phone-only {
-        margin: 5px 0;
-    }
-      
-    }
-}
+
 }
 

@@ -8,14 +8,27 @@
             }
             p {
                 @include p;
+                margin-bottom: 40px;
             }
 
         }
         .blog-main {
+            height: 620px;
+            overflow: hidden;
             .blog-item {
-                @include border-radius-25;
+                @include for-tablet-portrait-up {
+                    margin: 10px 0;
+                }
                 @include for-phone-only {
                     margin: 10px 0;
+                }
+                &::before {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    content: '';
+                    background-color: rgba(0, 0, 0, 0.4);
+                    @include border-radius-25;
                 }
                 &:hover {
                     .blog-item-overlay {
@@ -26,6 +39,7 @@
                 
                 img {
                     width: 100%;
+                    @include border-radius-25;
                 }
                 .blog-item-overlay {
                     width: 380px;
@@ -44,8 +58,14 @@
                         color: $white;
                     }
                     a {
+                        
                         text-decoration: none;
                         @include btn;
+                        color: $white;
+                        border-color: $white;
+                        &:hover {
+                            border-color: $main-color;
+                        }
 
                     }
                 }

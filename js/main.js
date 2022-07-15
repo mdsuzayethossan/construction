@@ -11,9 +11,11 @@ $('.counter').counterUp({
 });
 
 //blog
-$(".blog-item").niceScroll({
-    cursorborder: "1px solid #fff",
-    cursorwidth: "5px", 
+$(".blog-main").niceScroll({
+  cursorcolor: "#18A7B9",
+  horizrailenabled: false,
+  cursorborder: "none",
+   
 });
 //offcanvas
 document.querySelector('#navbarSideCollapse').addEventListener('click', () => {
@@ -67,6 +69,16 @@ $('.engineer-main').slick({
 ]
   });
 
+  //navbar
+  var navbar = $('.navbar');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 20) {
+    navbar.addClass('position-fixed');
+  } else {
+    navbar.removeClass('position-fixed');
+  }
+});
   //back to top
   var btn = $('.back-to-top');
 

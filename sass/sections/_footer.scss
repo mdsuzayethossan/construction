@@ -3,6 +3,7 @@
     .container {
         .back-to-top {
             a {
+                
                 i {
                     cursor: pointer;
                     &:hover {
@@ -17,10 +18,13 @@
                 margin: 10px 0;
             }
             a {
-               font-size: 25px;
+                font-size: large;
+                font-weight: 700;
+                color: $main-color;
                text-decoration: none;
                margin-bottom: 10px;
                display: inline-block;
+
             }
             p {
                 margin-bottom: 20px;

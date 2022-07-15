@@ -11,9 +11,15 @@
         }
         a {
             @include btn;
+            &:hover {
+                i {
+                    color: $white;
+                }
+            }
             i {
                 margin-left: 8px;
-                color: $white;
+                color: $main-color;
+                
             }
 
         }
